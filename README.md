@@ -1,4 +1,4 @@
 AngularJS
 =========
 
-AngularJS Homeworks and project
+AngularJS Homeworks and Project
