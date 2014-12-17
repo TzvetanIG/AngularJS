@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="IntroToAngularApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bind Image Source to Text Box</title>
+</head>
+<body ng-controller="BindImageSourceToTextBox" >
+<input type="text" ng-model="imgSrc" placeholder="Enter image URL">
+<br/>
+<img ng-src="{{imgSrc}}">
+
+<script src="libs/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+</body>
+</html>
