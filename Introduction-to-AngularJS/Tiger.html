@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Student-Page</title>
+</head>
+<body ng-app="IntroToAngularApp">
+<section ng-controller="Tiger" ng-style="sectionStyles">
+    <div ng-style="inlineBlock">
+        <h1>TIGER</h1>
+        <div><span ng-style="bold">Name:</span> {{tiger.name}}</div>
+        <div><span ng-style="bold">Born:</span> {{tiger.born}}</div>
+        <div><span ng-style="bold">Birth Date:</span> {{tiger.birthDate}}</div>
+        <div><span ng-style="bold">Live:</span> {{tiger.live}}</div>
+    </div>
+    <img ng-style="inlineBlock" ng-src="{{imgUrl}}">
+</section>
+<script src="libs/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+</body>
+</html>
