@@ -1,0 +1,47 @@
+body {
+    padding: 0 25px;
+}
+
+.sort-select {
+    float: right;
+}
+
+header {
+    font-size: 35px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.filter {
+    text-align: center;
+}
+
+.filter div {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+ul {
+    list-style-type: none;
+    width: 80%;
+    border: 1px solid red;
+    padding: 0;
+}
+
+main #videos {
+    margin: 20px auto;
+}
+
+.video div span {
+    font-weight: bold;
+}

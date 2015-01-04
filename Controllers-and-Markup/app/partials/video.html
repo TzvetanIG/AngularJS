@@ -1,0 +1,15 @@
+<ul id="videos" >
+    <li ng-repeat="video in videos | orderBy:predicate:reverse | filter:filterPredicate | filter:filterByDate">
+        <div class="video">
+            <div><span>Title:</span> {{video.title}}</div>
+            <div><span>Length:</span> {{video.length}}</div>
+            <div><span>Category:</span> {{video.category}}</div>
+            <div><span>Subscribers:</span> {{video.subscribers}}</div>
+            <div><span>Date:</span> {{video.date | date: 'd-MM-yyyy'}}</div>
+            <div><span>Subtitles:</span> <input type="checkbox" ng-checked="{{video.haveSubtitles}}" disabled></div>
+        </div>
+        <hr/>
+        <hr/>
+        <hr/>
+    </li>
+</ul>

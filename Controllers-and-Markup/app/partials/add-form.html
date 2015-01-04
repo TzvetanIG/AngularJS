@@ -1,0 +1,13 @@
+<form>
+    <h2>Add New Video</h2>
+    <input type="text" placeholder="Title" ng-model="newVideo.title">
+    <input type="text" placeholder="Length" ng-model="newVideo.length">
+    <input type="text" placeholder="Category" ng-model="newVideo.category">
+    <input type="number" placeholder="Subscribers" ng-model="newVideo.subscribers">
+    <input type="date" placeholder="Date" ng-model="newVideo.date">
+    <label for="subtitles">Subtitles</label><input id="subtitles" type="checkbox"  ng-model="newVideo.haveSubtitles">
+    <br/>
+    <a href="#\">
+        <button ng-click="addVideo(newVideo)">Add</button>
+    </a>
+</form>

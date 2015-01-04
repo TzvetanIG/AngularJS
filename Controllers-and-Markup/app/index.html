@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="videoApp">
+<head>
+    <meta charset="utf-8">
+    <title>Video System</title>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body ng-controller="VideosPage">
+<header>Video System</header>
+<nav>
+    <hr/>
+    <a href="#/add">Add Video</a>
+    <a href="#/">Show All Videos</a>
+
+    <div class="sort-select">
+        Sort by
+        <select ng-change="sortVideos(select)" ng-model="select">
+            <option value="unsorted">Unsorted</option>
+            <option value="title">Title</option>
+            <option value="length">Length</option>
+            <option value="date">Date</option>
+        </select>
+    </div>
+    <hr/>
+</nav>
+<section class="filter">
+    <div>
+        Category:
+        <select ng-model="filter.category"  ng-options="category for category in categories">
+            <option value="">All Categories</option>
+        </select>
+    </div>
+    <div>
+        Date:
+        <input type="date"> to <input type="date">
+    </div>
+    <div>
+        Subtitles:
+        <input type="checkbox" ng-model="filter.haveSubtitles">
+    </div>
+    <div>
+        <button ng-click="filterVideos(filter)">Filter</button>
+        <button ng-click="clearFilter()">Clear Filter</button>
+    </div>
+    <hr/>
+</section>
+<main ng-view>
+
+</main>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/videosData.js"></script>
+<script src="js/controllers/videosController.js"></script>
+
+</body>
+</html>
